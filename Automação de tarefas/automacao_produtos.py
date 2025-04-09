@@ -58,8 +58,6 @@ print(tabela)
 for linha in tabela.index:
     # clicar no campo de código
     pyautogui.click(x=653, y=294)
-    pyautogui.hotkey('ctrl', 'a')
-    pyautogui.press("del")
     # pegar da tabela o valor do campo que a gente quer preencher
     codigo = tabela.loc[linha, "codigo"]
     # preencher o campo
