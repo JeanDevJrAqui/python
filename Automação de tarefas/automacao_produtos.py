@@ -81,7 +81,7 @@ for linha in tabela.index:
     if not pd.isna(obs):
         pyautogui.write(str(tabela.loc[linha, "obs"]))
     pyautogui.press("tab")
-    pyautogui.press("enter") # cadastra o produto (botao enviar)
+    pyautogui.press('enter', presses=2, interval=0.05) # cadastra o produto (botao enviar)
     # dar scroll de tudo pra cima
     pyautogui.scroll(5000)
     # Passo 5: Repetir o processo de cadastro até o fim
